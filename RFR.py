@@ -176,3 +176,5 @@ def plot_random_test_spectrum_comparison(X_test, y_test, model, wavelengths, tes
         plt.tight_layout()
         plt.savefig(f"Clear_test_spectrum_comparison_with_rainbow_{idx}.png", dpi=300)
         plt.close()
+
+plot_random_test_spectrum_comparison(X_test_sat, y_test_sat, model_sat, wavelengths, test_idx_sat, df, n_samples=50)
