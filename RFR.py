@@ -116,10 +116,3 @@ def run_rf_pipeline(X_data, y_data, input_cols, model_name_prefix):
 
 model_sat, X_test_sat, y_test_sat, test_idx_sat = run_rf_pipeline(df, df, input_columns_sat, "WithSat")
 model_nosat, _, _, _ = run_rf_pipeline(df, df, input_columns_nosat, "NoSat")
-
-
-
-        
-        
-
-plot_random_test_spectrum_comparison(X_test_sat, y_test_sat, model_sat, wavelengths, test_idx_sat, df, n_samples=50)
