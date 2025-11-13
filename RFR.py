@@ -36,7 +36,7 @@ target_columns = [f'Spectrum[{i}]' for i in range(421)]
 wavelengths = np.linspace(360, 780, 421)
 
 #Load train and test data
-df = pd.read_csv("TrainTestData.csv")
+df = pd.read_csv("TrainTestData.csv") #8 individual csv files joined
 
 def run_rf_pipeline(X_data, y_data, input_cols, model_name_prefix):
     X = X_data[input_cols].values
